@@ -11,8 +11,8 @@ let json;
 
 
 
-fdescribe(`The route`, () => {
-    fdescribe(`to /tracks`, () => {
+describe(`The route`, () => {
+    describe(`to /tracks`, () => {
         beforeAll((done) => {
             callAPI('/tracks')
                 .then(data => res = data)

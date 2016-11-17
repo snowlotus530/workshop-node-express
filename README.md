@@ -3,7 +3,7 @@
 #### Requerimientos previos
 
 - Computadora con Linux o Windows
-- Git (si estás en Windows usá la consola de Git bash)
+- Git (si estás en Windows usá la consola de Git bash) 
 - Node.js 6.0 o superior
 - npm 3.0 o superior
 - Postman (para probar los endpoints)
@@ -79,14 +79,14 @@ Esta instancia nos brinda metodos para buscar, insertar, editar y eliminar docum
         Ejemplo: Buscar una banda por id
     */
     const dataBase = require('../../database/Database').instance;
-
+    
     dataBase.findOne({_id: 2213, docType: 'BAND'})
         .then(document => {
             console.log('Banda:', documents);
         })
         .catch(error => {
             console.log('Ha ocurrido un error', error);
-        });
+        }); 
 ```
 
 Para una referencia completa del funcionamiento de la base de datos consulten la [documentacion oficial de nedb](https://github.com/louischatriot/nedb)
